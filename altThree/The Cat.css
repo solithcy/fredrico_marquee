@@ -1,10 +1,10 @@
 body {
-    background-color: #261447;
+    background-color: #31393c;
 }
 
 p
 {
-    color: #51e5ff;
+    color: #2176ff;
     white-space: nowrap;
     font-size: 12px;
     font-family: Monocraft;
@@ -14,7 +14,7 @@ p
 
 pre
 {
-    color: #51e5ff;
+    color: #2176ff;
     font-size: 12px;
     src: url(https://github.com/IdreesInc/Monocraft/releases/download/v2.5/Monocraft.otf);
     text-align: center;
@@ -22,15 +22,15 @@ pre
 
 /* Links */
 a:link {
-    color: #ffc759;
+    color: #f79824;
     text-decoration: none;
 }
 a:visited {
-    color: lightcyan;
+    color: #33a1fd;
     text-decoration: none;
 }
 a:hover {
-    color: #ff7b9c;
+    color: #fdca40;
     text-decoration: underline;
 }
 
