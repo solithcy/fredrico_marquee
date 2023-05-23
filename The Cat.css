@@ -1,0 +1,66 @@
+body {
+    background-color: #390020;
+}
+
+p
+{
+    color: white;
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: Monocraft;
+    src: url(https://github.com/IdreesInc/Monocraft/releases/download/v2.5/Monocraft.otf);
+    text-align: center;
+}
+
+pre
+{
+    color: white;
+    font-size: 12px;
+    src: url(https://github.com/IdreesInc/Monocraft/releases/download/v2.5/Monocraft.otf);
+    text-align: center;
+}
+
+/* Links */
+a:link {
+    color: aquamarine;
+    text-decoration: none;
+  }
+a:visited {
+    color: lightcyan;
+    text-decoration: none;
+}
+a:hover {
+    color: hotpink;
+    text-decoration: underline;
+  }
+
+#white
+{
+    color: white;
+}
+
+#straight
+{
+    /* Not me */
+    white-space: nowrap;
+    display: inline;
+    text-align: center;
+    line-break: strict;
+}
+
+#title
+{
+    white-space:pre;
+    color: white;
+    font-family: serif, sans-serif;
+}
+
+
+.hide {
+    display: none;
+}
+
+.show:hover + .hide {
+    display:inline;
+    color: red;
+}
