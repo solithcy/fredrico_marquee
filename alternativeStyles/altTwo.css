@@ -24,6 +24,12 @@ pre
     text-align: center;
 }
 
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Links */
 a:link {
     color: #ffc759;
