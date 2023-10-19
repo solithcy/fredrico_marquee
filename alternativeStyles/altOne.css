@@ -10,7 +10,6 @@ body {
 
 p
 {
-    -webkit-text-stroke: 0.2px #00757f;
     color: #1f8e9b;
     white-space: nowrap;
     font-size: 13px;
@@ -66,17 +65,17 @@ a:hover {
     font-family: serif, sans-serif;
 }
 
-#yellow
+.yellow
 {
     color: #fdca40;
 }
 
-#lightBlue
+.lightBlue
 {
     color: #33a1fd;
 }
 
-#pink
+.pink
 {
     color: #db93b0;
 }

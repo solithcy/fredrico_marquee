@@ -65,17 +65,17 @@ a:hover {
     font-family: serif, sans-serif;
 }
 
-#yellow
+.yellow
 {
     color: #fdca40;
 }
 
-#lightBlue
+.lightBlue
 {
     color: #33a1fd;
 }
 
-#pink
+.pink
 {
     color: #db93b0;
 }
