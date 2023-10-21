@@ -42,7 +42,13 @@ a:visited {
 a:hover {
     color: hotpink;
     text-decoration: underline;
-  }
+}
+
+#twodotsthree
+{
+    /* :3 doesn't look good at around 13xp */
+    font-size: 16px;
+}
 
 #white
 {
