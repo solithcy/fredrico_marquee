@@ -17,6 +17,12 @@ p
     text-align: center;
 }
 
+b
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
 pre
 {
     color: #1f8e9b;
