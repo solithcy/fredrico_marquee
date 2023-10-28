@@ -8,6 +8,14 @@ body {
     background-color: #261447;
 }
 
+h1{
+    color: #51e5ff;
+    white-space: nowrap;
+    font-family: 'monocraft';
+    text-align: center;
+    font-size: 30px;
+}
+
 p
 {
     color: #51e5ff;
