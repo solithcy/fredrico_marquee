@@ -22,7 +22,7 @@
     <title>The Cat Bio</title>
   </head>
   <body onload = "startup();">
-    <pre id = "movingTitle">▄▄▄█████▓ ██░ ██ ▓█████     ▄████▄   ▄▄▄      ▄▄▄█████▓    ██▓▄▄▄█████▓ ▄▄▄       ██▓    ▓██   ██▓   ▓█████▄  █    ██ ▓█████▄ ▓█████ 
+    <pre id = "movingTitle" onmouseover = "stopMove();" onmouseout = "reStartMove();">▄▄▄█████▓ ██░ ██ ▓█████     ▄████▄   ▄▄▄      ▄▄▄█████▓    ██▓▄▄▄█████▓ ▄▄▄       ██▓    ▓██   ██▓   ▓█████▄  █    ██ ▓█████▄ ▓█████ 
 ▓  ██▒ ▓▒▓██░ ██▒▓█   ▀    ▒██▀ ▀█  ▒████▄    ▓  ██▒ ▓▒   ▓██▒▓  ██▒ ▓▒▒████▄    ▓██▒     ▒██  ██▒   ▒██▀ ██▌ ██  ▓██▒▒██▀ ██▌▓█   ▀ 
 ▒ ▓██░ ▒░▒██▀▀██░▒███      ▒▓█    ▄ ▒██  ▀█▄  ▒ ▓██░ ▒░   ▒██▒▒ ▓██░ ▒░▒██  ▀█▄  ▒██░      ▒██ ██░   ░██   █▌▓██  ▒██░░██   █▌▒███   
 ░ ▓██▓ ░ ░▓█ ░██ ▒▓█  ▄    ▒▓▓▄ ▄██▒░██▄▄▄▄██ ░ ▓██▓ ░    ░██░░ ▓██▓ ░ ░██▄▄▄▄██ ▒██░      ░ ▐██▓░   ░▓█▄   ▌▓▓█  ░██░░▓█▄   ▌▒▓█  ▄ 
@@ -66,6 +66,7 @@
     <pre>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</pre>
     <p><a href = "./privacyPolicy/">Privacy Policies</a> | <a href = "./features/">Features of the site</a> | <a href="./credits/">Credits</a></p>
   
+    <script src="./js/main.js" async defer></script>
     <script src="./js/movingText.js" async defer></script>
   </body>
 </html> 

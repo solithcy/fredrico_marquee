@@ -1,6 +1,6 @@
 var per = 0;
 var sleep = 300;
-var direction = false;
+var direction = false, mouseOv = false;
 
 function moveTitle() {
     setTimeout(function() {
@@ -14,11 +14,16 @@ function moveTitle() {
             direction = true;
         if(per < -40)
             direction = false;
-
-        moveTitle(); // Call the function again for the next step
+        if(!mouseOv)
+            moveTitle(); // Call the function again for the next step
     }, sleep);
 }
 
-function startup() {
-    moveTitle(); // Start the animation
+function stopMove(){
+    mouseOv = true;
+}
+
+function reStartMove(){
+    mouseOv = false;
+    moveTitle();
 }
