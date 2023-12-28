@@ -65,8 +65,51 @@
     <p><img src = "./gifs/f_ckingwww.gif" alt = "I'm am definitly the web master no questions asked :)"> <a href = "https://godotengine.org/"><img src = "./gifs/clickhere_blue.gif" alt = "old site"></a> <a href = "https://support.microsoft.com/en-us/windows/internet-explorer-downloads-d49e1f0d-571c-9a7b-d97e-be248806ca70#ID0EBBD=Windows_7/"><img src = "./gifs/ie_anim.gif" alt = "Don't use it just remember https://corporatefinanceinstitute.com/resources/management/microsoft-antitrust-case/"></a> <img src = "./gifs/devils3.gif" alt = "UwU"> <img src = "./gifs/antinft.gif" alt = "No nft, I don't like them"> <a href = "https://www.mozilla.org/en-US/firefox/new/"><img src = "./gifs/anythingbut.gif" alt = "No chrome, using (kinda) hardened firefox :D"></a> <a href = "https://en.wikipedia.org/wiki/1080p"><img src = "./gifs/1080p.gif" alt = "I use 1920 x 1080 so that res works :D"></a> <a href = "https://yesterweb.org/no-to-web3/"><img src = "./gifs/say-no-to-web3.gif" alt = "NO WEB 3"></a> <a href = "https://ubuntu.com/download/server/"><img src = "./gifs/linux-p.gif" alt = "Yay open source :D"></a> <a href = "https://httpd.apache.org/"><img src = "./gifs/apache-powered.gif" alt = "I use apache 2 :D"></a></p>
     <pre>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</pre>
     <p><a href = "./privacyPolicy/">Privacy Policies</a> | <a href = "./features/">Features of the site</a> | <a href="./credits/">Credits</a></p>
-  
+    
+    <div id = "songDiv">
+      <h2>Random song I like</h2>
+      <iframe id="soundcloudPlayer" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"></iframe>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Array of SoundCloud track URLs
+        var soundcloudTracks = [
+          "https://soundcloud.com/theblackkeys/wild-child",
+          "https://soundcloud.com/theblackkeys/little-black-submarines",
+          "https://soundcloud.com/whokilledxix/spy",
+          "https://soundcloud.com/glassanimals/take-a-slice",
+          "https://soundcloud.com/iaintdarkie/rap-music",
+          "https://soundcloud.com/lildvrkie/money-power-fame",
+          "https://soundcloud.com/meiyo-scmusic/nothings-working-out",
+          "https://soundcloud.com/caroemerald/tangled-up-lokee-remix",
+          "https://soundcloud.com/kenashcorp/absolute-territory",
+          "https://soundcloud.com/2vvelve/keha",
+          "https://soundcloud.com/onerepublic/everybody-loves-me",
+          "https://soundcloud.com/barnscourtney/kicks",
+          "https://soundcloud.com/idontknowhowbuttheyfoundme/bleed-magic",
+          "https://soundcloud.com/barnscourtney/rather-die",
+          "https://soundcloud.com/crash-and-the-boys/we-hate-you-please-die",
+          "https://soundcloud.com/liam-lynch-official/united-states-of-whatever",
+          "https://soundcloud.com/the-white-stripes/fell-in-love-with-a-girl-1",
+        ];
+        var soundcloudPlayer = document.getElementById("soundcloudPlayer");
+      
+        // Function to set a random track
+        function setRandomTrack() {
+          // Get a random index from the array
+          var randomIndex = Math.floor(Math.random() * soundcloudTracks.length);
+      
+          // Set the src attribute of the iframe with the random track URL
+          soundcloudPlayer.src = "https://w.soundcloud.com/player/?url=" + encodeURIComponent(soundcloudTracks[randomIndex]);
+        }
+      
+        // Call the function to set a random track initially
+        setRandomTrack();
+      });
+      </script>
     <script src="./js/main.js" async defer></script>
     <script src="./js/movingText.js" async defer></script>
+    <script src="./js/songChanger.js" async defer></script>
   </body>
 </html> 
