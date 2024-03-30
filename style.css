@@ -8,6 +8,10 @@ body {
     background-color: #390020;
 }
 
+iframe{
+    background-color: #390020;
+}
+
 h1{
     color: white;
     white-space: nowrap;
