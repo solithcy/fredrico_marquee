@@ -6,6 +6,8 @@
 
 body {
     background-color: #390020;
+    zoom: 90%; /* https://developer.mozilla.org/en-US/docs/Web/CSS/zoom 
+    https://caniuse.com/css-zoom */
 }
 
 iframe{
