@@ -91,20 +91,18 @@ a:hover {
     font-family: serif, sans-serif;
 }
 
-.yellow
-{
-    color: #fdca40;
-}
-
-.lightBlue
-{
-    color: #33a1fd;
-}
-
-.pink
-{
-    color: #db93b0;
-}
+table td.yellow 
+{ 
+    color: #fdca40 !important; 
+} 
+table td.lightBlue 
+{ 
+    color: #33a1fd !important; 
+} 
+table td.pink 
+{ 
+    color: #db93b0 !important; 
+} 
 
 
 /* Div config for "Song I like" */
@@ -130,4 +128,12 @@ h2{
     position: absolute;
     bottom: 10px;
     margin-left: 10px;
+}
+
+.box{
+    margin: auto;
+    border: 5px solid gray;
+    border-radius: 5px;
+    border-style: dashed;
+    width: 700px;
 }
