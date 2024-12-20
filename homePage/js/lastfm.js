@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function fetchNowPlaying() {
         $.ajax({
-            url: '/now-playing',
+            url: './now-playing:5000',
             type: 'GET',
             dataType: 'json',
             success: function(data) {
