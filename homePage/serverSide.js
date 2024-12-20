@@ -1,9 +1,24 @@
 const express = require('express');
+const https = require('https');
+const fs = require('fs');
 const axios = require('axios');
 const app = express();
-const port = 5000;
+const port = 5000; 
 
-const apiKey = 'YOUR_API_KEY';
+const options = {
+    key: fs.readFileSync('/etc/letsencrypt/live/www.slongo.biz/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/www.slongo.biz/fullchain.pem')
+};
+
+// Middleware to handle CORS
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+});
+
+const apiKey = 'YOUR_API_KEY'; //Empty for obvious reasons :3
 const user = 'TheCatItalyDude';
 
 app.use(express.static('public'));
@@ -20,6 +35,6 @@ app.get('/now-playing', async (req, res) => {
     }
 });
 
-app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+https.createServer(options, app).listen(port, () => {
+    console.log(`Server is running at https://www.slongo.biz:${port}`);
 });

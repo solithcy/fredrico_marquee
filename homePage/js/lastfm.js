@@ -1,7 +1,7 @@
 $(document).ready(function() {
     function fetchNowPlaying() {
         $.ajax({
-            url: './now-playing:5000',
+            url: 'https://www.slongo.biz:5000/now-playing', 
             type: 'GET',
             dataType: 'json',
             success: function(data) {
