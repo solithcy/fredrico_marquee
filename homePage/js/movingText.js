@@ -31,9 +31,4 @@ function stopMove(){
 
 function reStartMove(){
   mouseOv = false;
-  moveTitle();
-}
-
-function setBlocky(b){
-  return blocky = b;
 }
