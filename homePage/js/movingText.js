@@ -1,29 +1,39 @@
-var per = 0;
-var sleep = 300;
-var direction = false, mouseOv = false;
+let rate = 5000, mouseOv = false, blocky = false, msOffset = 0, lastMs = 0;
+let title;
 
-function moveTitle() {
-    setTimeout(function() {
-        document.getElementById('movingTitle').style.marginLeft = per + "%";
-        if(!direction)
-            per += 3;
-        else
-            per -= 3;
-
-        if(per > 40)
-            direction = true;
-        if(per < -40)
-            direction = false;
-        if(!mouseOv)
-            moveTitle(); // Call the function again for the next step
-    }, sleep);
+function moveTitle(ms){
+  if(!title){
+    title = document.getElementById('movingTitle');
+    document.getElementById("blockyController").addEventListener("input", (e)=>{
+      blocky = e.currentTarget.checked;
+    });
+  }
+  if(!mouseOv){
+    const t = ((ms + msOffset) % rate) / rate;
+    const p = (t - 0.5) * 2 * 80;
+    const reverse = t >= 0.5;
+    let ml = p * (reverse ? -1 : 1) + 40;
+    if(blocky){
+      ml = Math.round(ml / 5) * 5;
+    }
+    title.style.marginLeft = ml + "%";
+  }else{
+    const t = ms - lastMs;
+    msOffset -= t;
+  }
+  lastMs = ms;
+  requestAnimationFrame(moveTitle)
 }
 
 function stopMove(){
-    mouseOv = true;
+  mouseOv = true;
 }
 
 function reStartMove(){
-    mouseOv = false;
-    moveTitle();
+  mouseOv = false;
+  moveTitle();
+}
+
+function setBlocky(b){
+  return blocky = b;
 }

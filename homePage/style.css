@@ -6,7 +6,7 @@
 
 body {
     background-color: #390020;
-    zoom: 90%; /* https://developer.mozilla.org/en-US/docs/Web/CSS/zoom 
+    zoom: 90%; /* https://developer.mozilla.org/en-US/docs/Web/CSS/zoom
     https://caniuse.com/css-zoom */
 }
 
@@ -91,18 +91,18 @@ a:hover {
     font-family: serif, sans-serif;
 }
 
-table td.yellow 
-{ 
-    color: #fdca40 !important; 
-} 
-table td.lightBlue 
-{ 
-    color: #33a1fd !important; 
-} 
-table td.pink 
-{ 
-    color: #db93b0 !important; 
-} 
+table td.yellow
+{
+    color: #fdca40 !important;
+}
+table td.lightBlue
+{
+    color: #33a1fd !important;
+}
+table td.pink
+{
+    color: #db93b0 !important;
+}
 
 
 /* Div config for "Song I like" */
@@ -136,4 +136,34 @@ h2{
     border-radius: 5px;
     border-style: dashed;
     width: 700px;
+}
+
+#blockyController{
+    width: 84px;
+    height: 31px;
+    background: #ccc;
+    font-size: .75rem;
+    appearance: none;
+    border-left: #fff 2px solid;
+    border-top: #fff 2px solid;
+    border-bottom: #000 2px solid;
+    border-right: #000 2px solid;
+    transform: translate(-4px, 3px);
+    cursor: pointer;
+    position: relative;
+    filter: blur(0.3px);
+}
+#blockyController:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    text-align: center;
+    white-space: break-spaces;
+    font-family: 'Monocraft';
+    content: "blocky off";
+}
+#blockyController:checked:after{
+    content: "blocky on";
 }
