@@ -1,4 +1,4 @@
-let rate = 5000, mouseOv = false, blocky = false, msOffset = 0, lastMs = 0;
+let rate = 5000, mouseOv = false, blocky = false, msOffset = rate / 4, lastMs = 0;
 let title;
 
 function moveTitle(ms){
